@@ -1,0 +1,8 @@
+@media (min-width: 992px) {
+      .container {
+        width: 65%;
+      }
+      .center{
+        min-height: 100%;
+      }
+}

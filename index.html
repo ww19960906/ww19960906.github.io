@@ -1,15 +1,16 @@
 ---
 layout: default
-title: 我的 Blog
+title: 我的博客
 ---
+<link rel="stylesheet" href="/css/index.css">
 <h2>{{ page.title }}</h2>
 <p> 最新文章 </p>
 <ul>
   {% for post in site.posts %}
   <li>
-    {{ post.date | date_to_string }}
+    <div class="postDate">{{ post.date | date_to_string }}</div>
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+    <div class="postEcp">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
   </li>
   {% endfor %}
 </ul>

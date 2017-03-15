@@ -11,7 +11,7 @@ title: 我的博客
     <li>
       <a href="#{{ post.title }}">{{ post.date | date_to_string }}</a>
     </li>
-    {% for post in site.posts %}
+    {% endfor%}
   </ul>
 </div>
 <div class="postList">
@@ -23,6 +23,6 @@ title: 我的博客
         <div class="postEcp">{{ post.excerpt | remove: ' <p>' | remove: '</p>' }}</div>
       </a>
     </li>
-    {% for post in site.posts %}
+    {% endfor %}
   </ul>
 </div>

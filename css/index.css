@@ -34,17 +34,17 @@
 @media (min-width: 992px) {
   .dateList{
     position: fixed;
-    display: block !important;
+    display: block;
     width: 90px;
     margin-left: -100px;
   }
 
-  .dateList>a{
+  .dateList li>a{
     display: block;
     text-decoration: none;
   }
 
-  .dateList>a:hover{
+  .dateList li>a:hover{
     background-color: #eef;
     transform: scale(1.1);
   }

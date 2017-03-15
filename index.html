@@ -5,12 +5,25 @@ title: 我的博客
 <link rel="stylesheet" href="/css/index.css">
 <h2>{{ page.title }}</h2>
 <p> 最新文章 </p>
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <div class="postDate">{{ post.date | date_to_string }}</div>
-    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    <div class="postEcp">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
-  </li>
-  {% endfor %}
-</ul>
+<div class="dateList">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="#{{ post.title }}">{{ post.date | date_to_string }}</a>
+    </li>
+    {% for post in site.posts %}
+  </ul>
+</div>
+<div class="postList">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a id="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">
+        <div class="postUrl">{{ post.title }}</div>
+        <div class="postEcp">{{ post.excerpt | remove: '
+          <p>' | remove: '</p>' }}</div>
+      </a>
+    </li>
+    {% for post in site.posts %}
+  </ul>
+</div>

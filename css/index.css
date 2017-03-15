@@ -34,7 +34,7 @@
 @media (min-width: 992px) {
   .dateList{
     position: fixed;
-    display: block;
+    display: block !important;
     width: 90px;
     margin-left: -100px;
   }

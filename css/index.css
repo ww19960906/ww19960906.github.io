@@ -20,7 +20,7 @@
   border-bottom: 1px solid #abc;
 }
 
-.postList li::last-child:after{
+.postList li:last-child::after{
   display: none;
 }
 
@@ -32,10 +32,9 @@
 
 .postEcp{
   overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 25px;
-  width: 95%;
-  padding-left: 10px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-right: 35px;
   color: #444;
 }
 

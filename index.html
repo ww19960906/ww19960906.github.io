@@ -20,8 +20,7 @@ title: 我的博客
     <li>
       <a id="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">
         <div class="postUrl">{{ post.title }}</div>
-        <div class="postEcp">{{ post.excerpt | remove: '
-          <p>' | remove: '</p>' }}</div>
+        <div class="postEcp">{{ post.excerpt | remove: ' <p>' | remove: '</p>' }}</div>
       </a>
     </li>
     {% for post in site.posts %}

@@ -1,3 +1,7 @@
+html{
+  overflow-y: scroll;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -17,12 +21,15 @@
   .container {
     width: 65%;
   }
+
   #header{
     align-self: flex-end;
   }
+
   #main{
     margin: 20px;
   }
+
   #footer{
   }
 }
